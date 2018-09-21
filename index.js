@@ -25,6 +25,6 @@ io.on('connection', function(socket){
     io.emit('chat message', msg);
   });
 });
-http.listen(80, function(){
+http.listen(var port = process.env.PORT || 3300, function(){
   console.log('listening on *:80');
 });
