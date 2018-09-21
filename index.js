@@ -11,7 +11,7 @@ app.use("/", express.static(path.join(__dirname, "public")));
 io.on('connection', function(socket){
   console.log('a user connected');
 });
-io.set('origins', '*.github.io:*');
+io.set('origins', '*github*:*');
 
 io.on('connection', function(socket){
   console.log('a user connected');
